@@ -1,0 +1,282 @@
+*{
+	padding:0%;
+	margin:0%;
+	box-sizing: border-box;
+}
+
+.sobremi{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+	width: 100%;
+	height: 100vh;
+
+}
+
+.sobremi__titulo{
+	font-size: 2.5rem;
+	color: #e3874f;
+	margin-bottom: 1.5rem;
+}
+
+.sobremi__conteninfo{
+
+	display: flex;
+	 width: 90%;
+     height: 60%;
+
+}
+
+
+
+
+.contentinfo__info{
+	width: 90%;
+	height: auto;
+    padding: 1rem;
+}
+
+
+.info__parrafouno{
+	font-size: 1.3rem;
+    text-align: justify;
+	font-weight: 200;
+	color: #ffffff;
+	margin-bottom: 1rem;
+}
+
+.info__parrafodos{
+	font-size: 1.3rem;
+	color: #ffffff;
+	margin-bottom: 1.5rem;
+	text-align: justify;
+}
+
+.info__titulo--habilidades,.info__titulo--hobies{
+	font-size: 1.8rem;
+	color: #e3874f;
+	margin-bottom: 1.5rem;
+
+
+}
+.info__habilidades,.info__hobbies{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	width: 100%;
+	height: 15%;
+   
+    margin-bottom: 1.5rem;
+}
+
+.info__iconotext{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	
+
+}
+
+.iconotext__lenguaje,.iconotext__hobbie{
+	color: #ffffff;
+}
+.iconotext__icono{
+	width: 2.5rem;
+	object-fit: cover;
+}
+
+
+.contentinfo__foto{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+	height: 100%;
+
+
+}
+
+.foto__conten{
+	display: flex;
+    justify-content: center;
+    align-items: flex-end;
+	width: 70%;
+	height: 50%;
+	border: 4px solid #e3874f;
+	box-shadow: 0px 0px 30px -6px #e3874f;
+	border-radius: 10px;
+	animation: float 2s linear infinite;
+
+}
+
+@keyframes float{
+	0%,100%{
+		transform:rotate(-25deg);
+		transform: translateY(0rem);
+	}
+	50%{
+		transform: translateY(-1.5rem);
+	}
+}
+
+
+.fotoconten__img{
+	width: 350px;
+	height: auto;
+
+
+
+
+
+}
+
+.contenthabiyhobbi{
+	height: auto;
+	background-color:#101114;
+    border-radius: 10px;
+    padding-left: 0.5rem;
+    padding-bottom: 0.1rem;
+    padding-top: 0.5rem;
+
+}
+
+
+@media only screen and (max-width: 768px){
+	.sobremi{
+		height: auto;
+   
+   }
+
+    .sobremi__titulo{
+	margin-top: 4rem;
+     margin-bottom: 4rem;
+}
+	
+
+
+	.sobremi__conteninfo{
+     display: flex;
+     flex-direction: column;
+	 align-items: center;
+	 width: 96%;
+     height: 60%;
+
+}
+  .contentinfo__info{
+	width: 100%;
+	height: auto;
+    padding: 1rem;
+	margin-bottom: 1rem;
+	margin-top: 0.5rem;
+}
+
+   .contentinfo__foto{
+    width: 35%;
+	height: auto;
+
+
+
+}
+
+  .info__parrafouno{
+	font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.info__parrafodos{
+	font-size: 1.2rem;
+	font-weight: 400;
+	
+
+}
+
+.fotoconten__img{
+	width: 250px;
+	height: auto;
+
+}
+
+.foto__conten{
+	width: 70%;
+	height: 180px;
+	
+
+}
+.info__habilidades,.info__hobbies{
+    margin-bottom: 1rem;
+}
+
+
+
+@media only screen and (max-width: 360px){
+	.sobremi{
+     height: auto;
+ }
+
+
+    .sobremi__titulo{
+    margin-bottom: 6rem;
+    margin-top: 5rem;
+}
+	.sobremi__conteninfo{
+     display: flex;
+     flex-direction: column;
+	 width: 95%;
+     height: auto;
+     margin-bottom: 3rem;
+
+
+}
+
+   .contentinfo__info{
+	width: 100%;
+	height: auto;
+    padding: 0rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+   .contentinfo__foto{
+    width: 100%;
+	height: 100%;
+
+
+}
+
+
+
+  .foto__conten{
+	width: 60%;
+	height: 200px;
+	
+	
+
+}
+
+
+.info__parrafouno,.info__parrafodos{
+	font-size: 1.5rem;
+    text-align: center;
+	font-weight: 300;
+	
+}
+
+.contenthabiyhobbi{
+	margin-top: 2.5rem;
+
+}
+
+.fotoconten__img{
+	width: 290px;
+	height: auto;
+
+
+
+
+	
+}

@@ -1,0 +1,99 @@
+*{
+	padding:0%;
+	margin:0%;
+	box-sizing: border-box;
+}
+
+.maineducacion{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+	white:100%;
+	height: 100vh;
+	background-color: #101114
+}
+
+.maineducacion__titulo{
+	font-size: 2.5rem;
+
+	color:  #e3874f;
+
+}
+.maineducacion__contenedor{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   width: 90%;
+   height: 60%;
+
+}
+.contenedor__cajasestudio{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	width: 23%;
+	height: 50%;
+	padding: 1.5rem;
+	background-color: rgba(255, 255, 255, .15);  
+   backdrop-filter: blur(5px);
+   border-radius: 10px;
+   border: 1px solid #ffffff;
+}
+
+.contenedor__cajasestudio:hover{
+	background-color:#e3874f ;
+	transform: translateY(-10px);
+	border: none;
+}
+
+
+.contenedorcajaestudios__tituloestudio{
+   color: #ffffff;
+}
+.contenedorcajaestudios__lugar{
+	color: #ffffff;
+}
+.contenedorcajaestudios__lenguajes{
+	color: #ffffff;
+}
+
+@media only screen and (max-width: 768px){
+.maineducacion__contenedor{
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+    width: 95%;
+	
+  }
+  .contenedor__cajasestudio{
+  	width: 31%;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 360px){
+	.maineducacion{
+	 height: auto;
+
+	}
+	.maineducacion__titulo{
+	 margin-bottom: 2rem;
+    margin-top: 5rem;
+	}
+	
+	.maineducacion__contenedor{
+   width: 95%;
+   height: auto;
+   margin-bottom: 3rem;
+  }
+  .contenedor__cajasestudio{
+  	width: 100%;
+  	height: 250px;
+  }
+
+	
+}
